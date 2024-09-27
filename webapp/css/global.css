@@ -1,3 +1,9 @@
+* {
+    margin: 0; /* Убираем все внешние отступы */
+    padding: 0; /* Убираем внутренние отступы */
+    box-sizing: border-box; /* Гарантируем, что padding и border включены в размеры элементов */
+}
+
 /* Основной контейнер для header */
 header {
     display: flex;
@@ -7,14 +13,14 @@ header {
     background-color: #EEEDE7; /* Фон шапки */
     flex-wrap: nowrap;
     border-radius: 20px;
+    margin: 10px;
 }
 
-/* Стиль для заголовка h2 */
+/* Стиль для заголовка h1 */
 .navigationTitle {
     font-size: 24px; /* Размер шрифта для заголовка */
     color: #333;
-    margin-right: calc(20px + 2vw);
-    margin-left: calc(20px + 2vw);
+    margin: 10px calc(20px + 2vw) 10px calc(20px + 2vw);
     white-space: nowrap;
     font-family: "Noto Serif", serif;
     font-optical-sizing: auto;
