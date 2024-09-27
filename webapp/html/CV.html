@@ -14,7 +14,7 @@
 <body>
 
 <header>
-    <h2 class="navigationTitle">Резюме</h2>
+    <h1 class="navigationTitle">Резюме</h1>
     <nav class="navigation">
         <ul class="navigationUl">
             <li class="navigationLi"><a href="../../index.html">Обо мне</a></li>
@@ -28,35 +28,60 @@
 <main>
     <div class="container">
         <div class="left-column">
-            <img src="/webapp/resources/ME.JPG" alt="Фотография" class="profile-pic">
+            <img src="/webapp/resources/ME2.png" alt="Фотография" class="profile-pic">
             <div class="contact-info">
                 <h3>Контактная информация</h3>
-                <p>Email: dmcerkes@gmail.com</p>
-                <p>Телефон: +421 950468614</a></p>
+                <p>Телефон: <a href="tel:+421950468614">+421 950 468 614</a></p>
+                <p>Email: <a href="mailto:dmcerkes@gmail.com">dmcerkes@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/dmytro-cherkes/" target="_blank">Профиль</a></p>
+                <p>Github: <a href="https://github.com/DimaCherkes" target="_blank">Репозиторий</a></p>
+            </div>
+
+            <div class="languages">
+                <h3>Языки</h3>
+                <ul>
+                    <li>Русский (родной)</li>
+                    <li>Украинский (родной)</li>
+                    <li>Английский (B2)</li>
+                    <li>Словацкий (B2)</li>
+                </ul>
             </div>
         </div>
 
         <div class="right-column">
+            <div class="objective">
+                <h2>Цель</h2>
+                <p>Моим главным стремлением является развитие в области DevOps, а также углубленное изучение Java, сетевых технологий и безопасности. Я хочу активно участвовать в жизни проекта и вносить значимый вклад в успех команды.</p>
+            </div>
+
             <div class="education">
-                <h3>Образование</h3>
-                <p>Университет STU, FEI, 2022 - 2025</p>
-                <p>Математическая средняя школа 2015 - 2022</p>
-            </div>
-            <div class="skills">
-                <h3>Компьютерные навыки</h3>
+                <h2>Образование</h2>
                 <ul>
-                    <li>HTML, CSS, JavaScript</li>
-                    <li>Python, Java</li>
-                    <li>SQL, MySQL</li>
+                    <li>Словацкий технический университет (STU FEI), специальность "Прикладная информатика", 2022 - 2025</li>
+                    <li>JavaRush University, курс по Java, Spring, базы данных</li>
                 </ul>
             </div>
-            <div class="languages">
-                <h3>Языковые навыки</h3>
+
+            <div class="experience">
+                <h2>Опыт работы</h2>
+                <h3>Java/PowerShell Developer, Siemens (Май 2024 - настоящее время)</h3>
                 <ul>
-                    <li>Русский (родной язык)</li>
-                    <li>Английский (продвинутый уровень)</li>
-                    <li>Немецкий (начальный уровень)</li>
+                    <li>Разработка и автоматизация скриптов на PowerShell для интеграционного тестирования.</li>
+                    <li>Создание и поддержка тестовых сценариев.</li>
+                    <li>Автоматизация обработки больших объёмов данных в Excel.</li>
                 </ul>
+            </div>
+
+            <div class="projects">
+                <h2>Проекты</h2>
+                <h3>API для тестирования</h3>
+                <p>Разработка RESTful API для тестирования с использованием JUnit и Mockito для юнит-тестов и Testcontainers для интеграционных тестов. <br><i>Технологии: Java, Spring, PostgreSQL, Docker, JUnit, Mockito, Testcontainers, Git</i></p>
+
+                <h3>API для управления пользователями</h3>
+                <p>Разработка RESTful API для управления пользователями с использованием Spring MVC и PostgreSQL. API поддерживает операции CRUD. <br><i>Технологии: Java, Spring, PostgreSQL, Maven, Thymeleaf, Tomcat, Git</i></p>
+
+                <h3>Фронтенд для API</h3>
+                <p>Разработка простого фронтенда для API с использованием JavaScript (jQuery), HTML и CSS. Проект включает в себя создание интерфейса для взаимодействия с backend через RESTful API. <br><i>Технологии: JavaScript, jQuery, HTML, CSS, RESTful API</i></p>
             </div>
         </div>
     </div>

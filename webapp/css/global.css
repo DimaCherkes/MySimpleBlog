@@ -24,7 +24,6 @@ header {
     font-size: 24px; /* Размер шрифта для заголовка */
     color: #333;
     margin: 10px calc(20px + 2vw) 10px calc(20px + 2vw);
-    white-space: nowrap;
     font-family: "Noto Serif", serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -51,6 +50,7 @@ header {
     display: inline; /* Элементы списка в строку */
     margin-left: 20px; /* Отступ между пунктами меню */
     font-size: larger;
+    padding: 0;
 }
 
 a {
