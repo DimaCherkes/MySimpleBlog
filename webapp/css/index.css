@@ -22,10 +22,16 @@ article {
 }
 
 /* Контейнер для изображения и текста */
-.content {
+.content{
     padding: 20px; /* Внутренние отступы */
     border-radius: 10px; /* Скругленные углы */
     margin: 0 auto; /* Центрирование блока по горизонтали */
+}
+
+.asidePart {
+    display: flex;
+    justify-content: space-between; /* Пространство между элементами */
+    align-items: flex-start; /* Выравнивание элементов по верхнему краю */
 }
 
 /* Стили для изображения */
@@ -45,7 +51,8 @@ article {
 
 /* Стили для секции со списком */
 .list-section {
-    flex: 1; /* Занимает оставшуюся ширину */
+    flex: 1;
+    margin-left: 50px;
 }
 
 /* Стили для списка */
@@ -68,17 +75,18 @@ ul li:hover {
 
 /* Стили для тега <aside> с цитатой */
 .quote {
-    flex: 0.5;
-    background-color: #f9f9f9; /* Светлый фон для цитаты */
-    border-left: 4px solid #ccc; /* Линия слева для визуального акцента */
-    margin: 20px 0; /* Отступы сверху и снизу */
-    padding: 15px 20px; /* Внутренние отступы */
-    font-style: italic; /* Курсив для цитаты */
-    font-size: 18px; /* Размер шрифта цитаты */
-    color: #555; /* Цвет текста цитаты */
-    border-radius: 8px; /* Скругленные углы для блока с цитатой */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Лёгкая тень для придания глубины */
-    text-align: right;
+    flex: 0.7; /* Занимает 50% от ширины */
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #ccc;
+    padding: 15px 20px;
+    font-style: italic;
+    font-size: 18px;
+    color: #555;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: right; /* Выравнивание текста по правому краю */
+    align-self: flex-start; /* Поднятие цитаты на уровень списка */
 }
 
 /* Дополнительные стили для цитаты внутри <blockquote> */
@@ -101,7 +109,6 @@ ul li:hover {
 @media (max-width: 768px) {
     main {
         flex-direction: column; /* На маленьких экранах элементы в колонку */
-
     }
 
     .image {
@@ -111,8 +118,14 @@ ul li:hover {
         margin: 0 auto 20px; /* Центрирование изображения */
     }
 
-    .quote {
-        text-align: center; /* Цитата центрируется на мобильных */
-        margin-top: 20px;
+    .asidePart {
+        display: block;
     }
+
+    .quote {
+        width: 100%; /* Цитата занимает всю ширину экрана на мобильных */
+        text-align: center; /* Центрируем текст для мобильных */
+        margin-top: 20px; /* Отступ сверху для цитаты */
+    }
+
 }

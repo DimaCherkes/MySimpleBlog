@@ -55,6 +55,26 @@ a {
     color: #0A0708; /* Цвет ссылок */
 }
 
+/* Основные стили для footer */
+footer {
+    display: flex;
+    justify-content: center; /* Центрируем контент */
+    align-items: center; /* Выравнивание по вертикали */
+    padding: 20px; /* Отступы */
+    background-color: #EEEDE7; /* Цвет фона для footer */
+    border-radius: 20px; /* Скругление углов */
+    margin: 10px; /* Внешние отступы */
+}
+
+/* Стили для address */
+address {
+    font-family: "Noto Serif", serif; /* Шрифт в стиле заголовков */
+    font-weight: 400; /* Обычный вес шрифта */
+    font-size: 16px; /* Размер текста */
+    line-height: 1.6; /* Межстрочное расстояние */
+    color: #333; /* Цвет текста */
+    text-align: center; /* Текст по центру */
+}
 
 /* Медиазапрос для мобильных устройств */
 @media (max-width: 768px) {
@@ -71,5 +91,13 @@ a {
     .navigationLi {
         display: block; /* Элементы меню в столбик на мобильных */
         margin: 5px 0; /* Отступы между элементами */
+    }
+
+    footer {
+        padding: 15px; /* Уменьшаем отступы на мобильных */
+    }
+
+    address {
+        font-size: 14px; /* Уменьшаем размер шрифта на мобильных */
     }
 }
