@@ -3,6 +3,9 @@
     padding: 0; /* Убираем внутренние отступы */
     box-sizing: border-box; /* Гарантируем, что padding и border включены в размеры элементов */
 }
+body {
+    background: linear-gradient(to right, #c6c6c6, #FFFFFF, #bdbdbd);
+}
 
 /* Основной контейнер для header */
 header {
@@ -10,10 +13,10 @@ header {
     justify-content: space-between; /* Распределяем заголовок и навигацию по краям */
     align-items: center; /* Выровнять по вертикали */
     padding: 10px 20px; /* Отступы для пространства */
-    background-color: #EEEDE7; /* Фон шапки */
     flex-wrap: nowrap;
     border-radius: 20px;
     margin: 10px;
+    background: linear-gradient(to right, #b2b2b2, #ebebeb, #a9a9a9);
 }
 
 /* Стиль для заголовка h1 */
@@ -61,9 +64,9 @@ footer {
     justify-content: center; /* Центрируем контент */
     align-items: center; /* Выравнивание по вертикали */
     padding: 20px; /* Отступы */
-    background-color: #EEEDE7; /* Цвет фона для footer */
     border-radius: 20px; /* Скругление углов */
     margin: 10px; /* Внешние отступы */
+    background: linear-gradient(to right, #b2b2b2, #ebebeb, #a9a9a9);
 }
 
 /* Стили для address */

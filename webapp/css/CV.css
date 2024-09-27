@@ -1,0 +1,73 @@
+/* Основные стили */
+body {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Контейнер для двух колонок */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    min-height: 100vh;
+    max-width: 900px;
+    background-color: #efefef;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.27);
+}
+
+
+/* Левая колонка с фотографией и контактами */
+.left-column {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Фотография */
+.profile-pic {
+    width: 100%;
+    height: auto;
+    border-radius: 90%;
+}
+
+/* Контактная информация */
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info h3 {
+    margin-bottom: 10px;
+}
+
+/* Правая колонка с образованием и навыками */
+.right-column {
+    background-color: #e0e0e0;
+    padding: 20px;
+}
+
+.right-column h3 {
+    margin-bottom: 10px;
+}
+
+/* Стили для секций в правой колонке */
+.education, .skills, .languages {
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
