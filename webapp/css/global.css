@@ -5,6 +5,12 @@
 }
 body {
     background: linear-gradient(to right, #c6c6c6, #FFFFFF, #bdbdbd);
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
 }
 
 main {
@@ -26,6 +32,24 @@ header {
     border-radius: 20px;
     margin: 10px;
     background: linear-gradient(to right, #b2b2b2, #ebebeb, #a9a9a9);
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+h3 {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-style: italic;
 }
 
 /* Стиль для заголовка h1 */
@@ -60,6 +84,23 @@ header {
     margin-left: 20px; /* Отступ между пунктами меню */
     font-size: larger;
     padding: 0;
+}
+
+/* Контейнер для всего содержимого */
+.container {
+    max-width: 900px;
+    background-color: #efefef;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.27);
+    margin: 0 10px;
+}
+
+/* Контейнер для изображения и текста */
+.content{
+    padding: 20px; /* Внутренние отступы */
+    border-radius: 10px; /* Скругленные углы */
+    margin: 0 auto; /* Центрирование блока по горизонтали */
 }
 
 a {

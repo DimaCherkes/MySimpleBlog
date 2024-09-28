@@ -1,22 +1,7 @@
 
-article {
-    margin: 0 10px 0 10px;
-}
-
 /* Контейнер для всего содержимого */
 .container {
-    max-width: 900px;
-    background-color: #efefef;
-    padding: 20px;
-    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.27);
-}
-
-/* Контейнер для изображения и текста */
-.content{
-    padding: 20px; /* Внутренние отступы */
-    border-radius: 10px; /* Скругленные углы */
-    margin: 0 auto; /* Центрирование блока по горизонтали */
 }
 
 .asidePart {

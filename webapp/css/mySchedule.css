@@ -2,18 +2,6 @@
 /* Контейнер для всего содержимого */
 .container {
     max-width: 1112px;
-    background-color: #efefef;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.27);
-    margin: 0 10px;
-}
-
-/* Контейнер для изображения и текста */
-.content{
-    padding: 20px; /* Внутренние отступы */
-    border-radius: 10px; /* Скругленные углы */
-    margin: 0 auto; /* Центрирование блока по горизонтали */
 }
 
 /* Общие стили для таблицы */
@@ -89,12 +77,6 @@ footer {
     width: calc(100% - 20px); /* Футер будет занимать всю ширину окна */
 }
 
-h1 {
-    margin-bottom: 10px;
-    font-weight: 600;
-    font-style: italic;
-}
-
 /* Медиа-запрос для экранов меньше 1112 пикселей */
 @media (max-width: 1132px) {
     th, td {
@@ -122,6 +104,9 @@ h1 {
     th, td {
         padding: 8px;
         font-size: 0.9rem; /* Уменьшаем размер шрифта на узких экранах */
+    }
+    h1 {
+        font-size: 1.5rem;
     }
 }
 

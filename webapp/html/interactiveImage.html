@@ -2,7 +2,8 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/webapp/css/global.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/interactiveImage.css">
     <title>Изображение</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -24,27 +25,30 @@
     </nav>
 </header>
 
-
 <main>
-    <article>
-        <section class="photo">
+    <div class="container">
+        <div class="content">
+            <h1>Интерактивное изображение с активными зонами</h1>
+            <div class="interactive-image-container">
+                <img src="../resources/interactive.png" width="900" alt="Интерактивное изображение" class="interactive-image">
 
-        </section>
+                <!-- включатель 1 -->
+                <div class="highlight" style="top: 31%; left: 1%; width: 10%; height: 15%;" data-title="Включатель с регулировкой света"></div>
 
-        <section class="text-about-me">
-            <div>
-                <p>Интерактивное фото</p>
+                <!-- бокал 3 -->
+                <div class="highlight" style="top: 62%; left: 52%; width: 7%; height: 10%;" data-title="Бокал работающего Андрея"></div>
+
+                <!-- ноги 4 -->
+                <div class="highlight" style="top: 78%; left: 65%; width: 25%; height: 10%;" data-title="Ноги находящиеся на ковре"></div>
+
+                <!-- ноутбук -->
+                <div class="highlight" style="top: 59%; left: 72%; width: 13%; height: 7%;" data-title="Ноутбук на котором было написано много гениальных идей"></div>
+
+                <div class="highlight" style="top: 46%; left: 53%; width: 5%; height: 7%;" data-title="Мой бокал со спиртным напитком"></div>
+
             </div>
-        </section>
-
-        <aside>
-
-        </aside>
-    </article>
-
-    <aside>
-
-    </aside>
+        </div>
+    </div>
 </main>
 
 <footer>
