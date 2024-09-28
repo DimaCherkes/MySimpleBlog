@@ -1,13 +1,4 @@
 
-main {
-    display: flex;
-    justify-content: center;
-    font-family: "Noto Serif", serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-}
-
 article {
     margin: 0 10px 0 10px;
 }
