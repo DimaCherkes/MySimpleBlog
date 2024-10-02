@@ -71,11 +71,11 @@ td.PE {
     background-color: #555; /* Цвет ползунка при наведении */
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: calc(100% - 20px); /* Футер будет занимать всю ширину окна */
-}
+/*footer {*/
+/*    position: fixed;*/
+/*    bottom: 0;*/
+/*    width: calc(100% - 20px); !* Футер будет занимать всю ширину окна *!*/
+/*}*/
 
 /* Медиа-запрос для экранов меньше 1112 пикселей */
 @media (max-width: 1132px) {

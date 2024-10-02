@@ -3,23 +3,41 @@
     padding: 0; /* Убираем внутренние отступы */
     box-sizing: border-box; /* Гарантируем, что padding и border включены в размеры элементов */
 }
+
+html, body {
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     background: linear-gradient(to right, #c6c6c6, #FFFFFF, #bdbdbd);
-    font-family: "Noto Serif", serif;
+    font-family: "Noto Serif light", serif;
     font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Serif italic';
+    src: url('../resources/Noto_Serif/NotoSerif-Italic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Noto Serif light';
+    src: url('../resources/Noto_Serif/NotoSerif-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
-    margin: 0;
-    padding: 0;
 }
 
 main {
     display: flex;
+    align-items: start;
+    flex: 1;
     justify-content: center;
-    font-family: "Noto Serif", serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
 }
 
 /* Основной контейнер для header */
@@ -57,7 +75,7 @@ h2 {
     font-size: 24px; /* Размер шрифта для заголовка */
     color: #333;
     margin: 10px calc(20px + 2vw) 10px calc(20px + 2vw);
-    font-family: "Noto Serif", serif;
+    font-family: "Noto Serif thin", serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -67,7 +85,7 @@ h2 {
 .navigation {
     flex-grow: 1; /* Навигация расширяется для заполнения пространства */
     text-align: right; /* Выравнивание навигации вправо */
-    font-family: "Noto Serif", serif;
+    font-family: "Noto Serif italic", serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: italic;
@@ -75,6 +93,7 @@ h2 {
 
 .navigationUl {
     list-style-type: none; /* Убираем маркеры списка */
+    line-height: 1.7; /* Межстрочное расстояние для улучшенной читаемости */
     margin: 0;
     padding: 0;
 }
@@ -110,18 +129,16 @@ a {
 
 /* Основные стили для footer */
 footer {
-    display: flex;
-    justify-content: center; /* Центрируем контент */
-    align-items: center; /* Выравнивание по вертикали */
     padding: 20px; /* Отступы */
     border-radius: 20px; /* Скругление углов */
     margin: 10px; /* Внешние отступы */
     background: linear-gradient(to right, #b2b2b2, #ebebeb, #a9a9a9);
+
 }
 
 /* Стили для address */
 address {
-    font-family: "Noto Serif", serif; /* Шрифт в стиле заголовков */
+    font-family: "Noto Serif light", serif; /* Шрифт в стиле заголовков */
     font-weight: 400; /* Обычный вес шрифта */
     font-size: 16px; /* Размер текста */
     line-height: 1.6; /* Межстрочное расстояние */
